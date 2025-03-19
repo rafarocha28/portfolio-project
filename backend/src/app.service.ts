@@ -1,9 +1,9 @@
-import { Injectable } from '@nestjs/common';
-import { x } from "@core";
+import { Injectable } from "@nestjs/common";
+import { Id } from "@core";
 
 @Injectable()
 export class AppService {
   getHello(): string {
-    return String(x);
+    return String(Id.generate());
   }
 }
