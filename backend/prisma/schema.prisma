@@ -15,13 +15,30 @@ datasource db {
 }
 
 model Tech {
-  id          Int      @id @default(autoincrement())
+  id          Int       @id @default(autoincrement())
   name        String
   description String
   image       String
-  highlight   Boolean  @default(false)
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @default(now()) @updatedAt
+  highlight   Boolean   @default(false)
+  projects    Project[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @default(now()) @updatedAt
 
   @@map("techs")
+}
+
+model Project {
+  id          Int      @id @default(autoincrement())
+  name        String
+  description String
+  images      String[]
+  level       Int
+  type        String
+  highlight   Boolean  @default(false)
+  repo        String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @default(now()) @updatedAt
+  techs       Tech[]
+
+  @@map("projects")
 }
