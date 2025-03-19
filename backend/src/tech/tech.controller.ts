@@ -1,10 +1,10 @@
 import { Controller, Get } from "@nestjs/common";
 import { Tech as MyTech } from "@core";
-import { TechProvider } from "./tech.provider";
+import { TechPrisma } from "./tech.prisma";
 
 @Controller("techs")
 export class TechController {
-  constructor(private readonly techProvider: TechProvider) {}
+  constructor(private readonly techProvider: TechPrisma) {}
   @Get()
   async getAll(): Promise<MyTech[]> {
     return this.techProvider.getAll();
