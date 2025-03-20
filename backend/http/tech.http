@@ -1,0 +1,4 @@
+GET http://localhost:3000/techs
+
+###
+GET http://localhost:3000/techs/highlights

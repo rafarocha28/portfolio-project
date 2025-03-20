@@ -1,0 +1,16 @@
+POST https://rafarocha28.app.n8n.cloud/webhook-test/portfolio-assistant
+Content-Type: application/json
+
+{
+  "chatId": "123456789",
+  "message": "Como entro em contato com ele?"
+}
+
+###
+POST https://rafarocha28.app.n8n.cloud/webhook/portfolio-assistant
+Content-Type: application/json
+
+{
+  "chatId": "654321",
+  "message": "Programação mobile com o Rafael"
+}
