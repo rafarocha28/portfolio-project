@@ -32,7 +32,7 @@ export default function ChatWindow() {
       {messages.length === 0 ? (
         <div className="flex flex-col justify-center items-center min-h-[400px] sm:min-h-[500px]">
           <IconMessages size={230} stroke={0.2} className="text-black/30" />
-          <span>Let's chat?</span>
+          <span>Send a message</span>
         </div>
       ) : (
         <div className="flex flex-col p-2 gap-2 min-h-[400px] sm:min-h-[500px] max-h-[400px] sm:max-h-[500px] overflow-y-scroll">
