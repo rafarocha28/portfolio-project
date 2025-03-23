@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for portfolio-project-ancient-dust-5634 on 2025-03-19T22:24:14-03:00
+# fly.toml app configuration file generated for portfolio-project-dark-snow-3781 on 2025-03-23T16:54:02-03:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'portfolio-project-ancient-dust-5634'
+app = 'portfolio-project-dark-snow-3781'
 primary_region = 'gig'
 
 [build]
