@@ -3,4 +3,5 @@ export default interface Message {
   text: string;
   author: string;
   side: "left" | "right";
+  icon?: any;
 }

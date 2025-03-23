@@ -20,5 +20,5 @@ export default async function chat(
   });
 
   const msg = await response.json();
-  return msg.response;
+  return msg.resposta;
 }
