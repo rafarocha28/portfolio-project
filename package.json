@@ -1,0 +1,11 @@
+{
+  "name": "portfolio-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/rafarocha28/portfolio-project.git",
+  "author": "Rafael Rocha <rafaelrocha@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "concurrently \"cd frontend && yarn dev\" \"cd backend && yarn start:dev \""
+  }
+}
